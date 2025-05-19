@@ -5,6 +5,11 @@ Save the programming world from Assembly by guessing the secret word before all 
 
 ---
 
+**Live Demo:**  
+[Play Assembly: Endgame Online](https://jeffamazed.github.io/assembly-endgame-react/)
+
+---
+
 ## Features
 
 - **Hangman gameplay**: Guess the word by clicking or typing letters.
@@ -37,8 +42,8 @@ Save the programming world from Assembly by guessing the secret word before all 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+   git clone https://github.com/jeffamazed/assembly-endgame-react.git
+   cd assembly-endgame-react
    ```
 
 2. **Install dependencies:**
@@ -88,3 +93,6 @@ MIT
 
 - Inspired by [Bob Ziroll's React tutorials](https://scrimba.com/learn/learnreact).
 - Confetti effect by [react-confetti](https://github.com/alampros/react-confetti).
+- Sound effects from [Pixabay](https://pixabay.com/sound-effects/).
+
+---
