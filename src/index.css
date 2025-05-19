@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -41,7 +43,7 @@ main {
   align-items: center;
   gap: 30px;
   max-width: 600px;
-  padding: 25px 20px;  
+  padding: 25px 20px;
   width: 100%;
 }
 
@@ -70,7 +72,7 @@ header > p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: background-color 0.1s ease , visibility 0.1s ease;
+  transition: background-color 0.1s ease, visibility 0.1s ease;
 }
 
 .languages-container {
@@ -133,7 +135,8 @@ header > p {
   gap: 8px;
 }
 
-.keyboard-ltr, .sound-btn {
+.keyboard-ltr,
+.sound-btn {
   width: 3.3rem;
   height: 3.3rem;
   border-radius: 5px;
@@ -149,7 +152,7 @@ header > p {
   transition: filter 0.15s ease, transform 0.15s ease;
 }
 
-.keyboard-ltr:hover, 
+.keyboard-ltr:hover,
 .new-game-btn:hover,
 .sound-btn:hover {
   filter: brightness(1.3);
@@ -197,10 +200,10 @@ header > p {
   transform: scale(0.98);
 }
 
-.ltr, 
-.lang-chip, 
-.keyboard-ltr, 
-.new-game-btn, 
+.ltr,
+.lang-chip,
+.keyboard-ltr,
+.new-game-btn,
 .status-container {
   user-select: none;
 }
@@ -219,7 +222,18 @@ header > p {
 
 .sound-btn {
   font-size: 1.2rem;
-  transition: background-color 0.15s ease; 
+  transition: background-color 0.15s ease;
+}
+
+/* Confetti overlay to prevent layout shift */
+.confetti-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1000;
 }
 
 @media only screen and (min-width: 501px) {
@@ -231,7 +245,8 @@ header > p {
     font-size: 1.7rem;
   }
 
-  .status-container, .languages-container {
+  .status-container,
+  .languages-container {
     font-size: 1.6rem;
   }
 
@@ -245,7 +260,8 @@ header > p {
     height: 4rem;
   }
 
-  .keyboard-ltr, .sound-btn {
+  .keyboard-ltr,
+  .sound-btn {
     font-size: 1.7rem;
     width: 3.2rem;
     height: 3.2rem;
@@ -269,7 +285,8 @@ header > p {
     font-size: 1.8rem;
   }
 
-  .status-container, .languages-container {
+  .status-container,
+  .languages-container {
     font-size: 1.7rem;
   }
 
@@ -279,7 +296,8 @@ header > p {
     height: 4.5rem;
   }
 
-  .keyboard-ltr, .sound-btn {
+  .keyboard-ltr,
+  .sound-btn {
     font-size: 2rem;
     width: 3.8rem;
     height: 3.8rem;
@@ -288,7 +306,6 @@ header > p {
   .sound-btn {
     font-size: 1.5rem;
   }
-
 
   .new-game-btn {
     font-size: 1.8rem;
