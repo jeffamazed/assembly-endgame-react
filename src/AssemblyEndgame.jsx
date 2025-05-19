@@ -134,22 +134,22 @@ export function AssemblyEndgame() {
 
   // control sound
   useEffect(() => {
-    if (isGameWon) {
-      if (controlSound) playSfx(sfxLib.winning);
+    if (isGameWon && controlSound) {
+      playSfx(sfxLib.winning);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isGameWon]);
 
   useEffect(() => {
-    if (isGameLost) {
-      if (controlSound) playSfx(sfxLib.losing);
+    if (isGameLost && controlSound) {
+      playSfx(sfxLib.losing);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isGameLost]);
 
   useEffect(() => {
-    if (isLastGuessWrong && lastGuessedLetter) {
-      if (controlSound) playSfx(sfxLib.booo);
+    if (isLastGuessWrong && lastGuessedLetter && controlSound) {
+      playSfx(sfxLib.booo);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isLastGuessWrong, lastGuessedLetter]);
